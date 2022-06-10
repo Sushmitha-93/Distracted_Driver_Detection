@@ -1,0 +1,36 @@
+.sidenav {
+  height: 100%;
+  position: fixed;
+  overflow-x: hidden;
+}
+
+.sidenav a {
+  text-decoration: none;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: palevioletred;
+}
+
+.main {
+  margin-left: 370px; /* Same as the width of the sidenav */
+}
+
+.accordion-body {
+  /* color: dimgray; */
+  color: palevioletred;
+  font-style: italic;
+}
+.color {
+  color: royalblue;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
