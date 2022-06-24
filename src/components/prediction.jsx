@@ -4,7 +4,7 @@ import axios from "axios";
 
 const Prediction = () => {
   const location = useLocation();
-  const imgLink = location.state;
+  const imgLink = location.state; // state passed from "selectPicture" component (Line 42) in Link
 
   const [prediction, setPrediction] = useState({});
 
@@ -22,7 +22,10 @@ const Prediction = () => {
   ];
 
   useEffect(() => {
-    const url = "http://127.0.0.1:8000/imageLink/?image_link=" + imgLink;
+    //const url = "http://127.0.0.1:8000/imageLink/?image_link=" + imgLink;
+    const url =
+      "https://thawing-retreat-25013.herokuapp.com/imageLink/?image_link=" +
+      imgLink;
 
     axios({
       method: "post",

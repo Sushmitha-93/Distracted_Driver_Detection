@@ -40,7 +40,8 @@ const FileUpload = () => {
     let formData = new FormData();
     formData.append("file", selectedFile);
 
-    const url = "http://127.0.0.1:8000/uploadfile/";
+    //const url = "http://127.0.0.1:8000/uploadfile/";
+    const url = "https://thawing-retreat-25013.herokuapp.com/uploadfile/";
 
     axios({
       method: "post",

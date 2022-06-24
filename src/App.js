@@ -12,6 +12,8 @@ import SelectPicture from "./components/selectPicture";
 import FileUpload from "./components/fileUpload";
 import Home from "./components/home";
 import Prediction from "./components/prediction";
+import Phase1Demo from "./components/phase1Demo";
+import Phase2Demo from "./components/phase2Demo";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
             <Route path="/selectpicture" element={<SelectPicture />} />
             <Route path="/fileupload" element={<FileUpload />} />
             <Route path="/prediction" element={<Prediction />} />
+            <Route path="/phase1demo" element={<Phase1Demo />} />
+            <Route path="/phase2demo" element={<Phase2Demo />} />
           </Routes>
         </div>
       </div>
