@@ -4,12 +4,14 @@ import { Link } from "react-router-dom";
 const SideBar = () => {
   return (
     <div class="sidenav col-md-3 p-5">
-      <h3>
-        <b>Distracted Driver Detection</b>
-      </h3>
-      <b className="color">
-        <i>Using Convolutional Neural Network and Transfer Learning</i>
-      </b>
+      <Link to="/ ">
+        <h3>
+          <b>Distracted Driver Detection</b>
+        </h3>
+        <b className="color">
+          <i>Using Convolutional Neural Network and Transfer Learning</i>
+        </b>
+      </Link>
       <br />
       <br />
       <Link to="/">

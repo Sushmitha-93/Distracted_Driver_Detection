@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -20,12 +21,23 @@ const Home = () => {
       </p>
       <p>This project has been divided into 2 Phases:</p>
       <p>
-        <b> Phase 1:</b> - Explore different ML algorithms. - Train and test
-        model using distracted driver image dataset. - Save the best model.
+        <b>
+          {" "}
+          <Link to="phase1demo">Phase 1:</Link>
+        </b>
+        <br />- Select distracted driver image dataset.
+        <br />- Explore different Machine Learning algorithms to classify images
+        if driver is distracted or driving safe.
+        <br />- Train and test model using distracted driver image dataset and
+        evaluate accuracy.
+        <br />- Save the best model.
       </p>
       <p>
-        <b>Phase 2:</b> To detect and predict the distraction in real time that
-        can be used by any user.
+        <b>
+          <Link to="phase2demo">Phase 2:</Link>
+        </b>{" "}
+        To detect and predict the distraction in real time that can be used by
+        any user.
       </p>
       <p>
         <i>Challenges:</i>
