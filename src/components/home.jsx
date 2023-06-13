@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Phase1Demo from "./phase1Demo";
 
 const Home = () => {
   return (
@@ -19,46 +20,26 @@ const Home = () => {
         algorithms can be effectively used to detect inattentive drivers using
         any sort of dashboard cameras and alert drivers.{" "}
       </p>
-      <p>This project has been divided into 2 Phases:</p>
       <p>
-        <b>
-          {" "}
-          <Link to="phase1demo">Phase 1:</Link>
-        </b>
-        <br />- Select distracted driver image dataset.
-        <br />- Explore different Machine Learning algorithms to classify images
-        if driver is distracted or driving safe.
-        <br />- Train and test model using distracted driver image dataset and
-        evaluate accuracy.
-        <br />- Save the best model.
+        Tasks carried out:
+        <ul>
+          <li>Select distracted driver image dataset.</li>
+          <li>
+            Explore different Machine Learning algorithms to classify images if
+            driver is distracted or driving safe.
+          </li>
+          <li>
+            Train and test model using distracted driver image dataset and
+            evaluate accuracy.{" "}
+          </li>
+          <li>Save the best model.</li>
+          <li>
+            Deploy the model on FastAPI that accepts picture URL and take
+            picture uploads to get prediction
+          </li>
+        </ul>
       </p>
-      <p>
-        <b>
-          <Link to="phase2demo">Phase 2:</Link>
-        </b>{" "}
-        To detect and predict the distraction in real time that can be used by
-        any user.
-      </p>
-      <p>
-        <i>Challenges:</i>
-      </p>
-      <p>
-        The image set used in Phase 1 is trained using same car model (having
-        same interior), with fixed camera angle. Hence the model gives good
-        acuracy when user is using same car with camera fixed in same position.
-        The model may not provide good accuracy when used in different car model
-        having different camera angle.
-      </p>
-      <p>
-        We want to create solution that would be useful to all users using
-        different car models where users can themselves fix a camera at the
-        convinience of thier car.
-      </p>
-      <p>
-        To achieve this, we plan to create solution that can collect vedio clip
-        of user performing certain distracted actions and train model that can
-        then be used for real time prediction.
-      </p>
+      <Phase1Demo />
     </div>
   );
 };

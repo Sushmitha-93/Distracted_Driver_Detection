@@ -41,7 +41,7 @@ const FileUpload = () => {
     formData.append("file", selectedFile);
 
     //const url = "http://127.0.0.1:8000/uploadfile/";
-    const url = "https://thawing-retreat-25013.herokuapp.com/uploadfile/";
+    const url = "http://44.203.70.143:8500/uploadfile/";
 
     axios({
       method: "post",

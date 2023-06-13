@@ -23,10 +23,6 @@ const Phase1Demo = () => {
 
   return (
     <div>
-      <h4 className="text-center">
-        <b>About Phase 1</b>
-      </h4>
-      <br />
       <h4>Dataset</h4>
       <p>
         I've have chosen{" "}
@@ -136,13 +132,33 @@ const Phase1Demo = () => {
         ResNet also uses batch normalization to improve network stability.
       </p>
       <br />
-      <h6>Demo</h6>
+      <h6>
+        <b>Demo</b>
+      </h6>
+      <h6>Demo Tech Stack</h6>
       <p>
-        Backend: <b>FastAPI</b> to take image as requests and respond with
-        prediction result using trained Resnet ML model to make predictions.
-        FastAPI Docker container image is deployed and hosted on Heroku.
-        <br /> Frontend: <b>ReactJS</b> application, Hosted on GitHub pages.
+        <ul>
+          <li>
+            Backend: <b>FastAPI</b> to take image as requests and respond with
+            prediction result using trained Resnet ML model to make predictions.
+          </li>
+          <li>
+            Frontend: <b>ReactJS</b> framework
+          </li>
+        </ul>
       </p>
+      <h6>Deployment and Hosting</h6>
+      <ul>
+        <li>
+          <b>Heroku</b> for hosting Docker container image of FastAPI
+        </li>
+        <li>
+          <b>GitHub Pages</b> for hosting ReactJS
+        </li>
+        <li>
+          <b>Post Images</b> for hosting images
+        </li>
+      </ul>
       <p>
         Check out <Link to="/selectpicture">Phase 1 demo</Link> which uses the
         trained Renet-50 model to predict unlabelled test images

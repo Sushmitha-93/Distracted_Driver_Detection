@@ -23,9 +23,7 @@ const Prediction = () => {
 
   useEffect(() => {
     //const url = "http://127.0.0.1:8000/imageLink/?image_link=" + imgLink;
-    const url =
-      "https://thawing-retreat-25013.herokuapp.com/imageLink/?image_link=" +
-      imgLink;
+    const url = "http://44.203.70.143:8500/imageLink/?image_link=" + imgLink;
 
     axios({
       method: "post",
@@ -54,7 +52,11 @@ const Prediction = () => {
         <br />
       </div>
 
-      {typeof prediction.class !== "undefined" && (
+      {typeof prediction.class === "undefined" ? (
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border" role="status"></div>
+        </div>
+      ) : (
         <div className="row justify-content-center">
           <div class="card col-md-6">
             <div class="card-body">
