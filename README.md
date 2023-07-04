@@ -1,5 +1,7 @@
 ### Checkout Demo deployed at https://sushmitha-93.github.io/Distracted_Driver_Detection/phase1demo
 
+Model deployed at: http://44.203.70.143:8500/docs
+
 Distracted driving is causing about 3000 deaths and 280,000 injuries per year according to National Highway Transportation and Safety Administration (NHTSA). Unfortunately distracted driving has become all too common these days with advent of smart phones and social media.
 
 Computer vision solutions based on machine learning image classification algorithms can be effectively used to detect inattentive drivers using any sort of dashboard cameras and alert drivers.
